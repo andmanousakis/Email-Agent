@@ -173,5 +173,3 @@ This repository is a prototype and includes several simplifications:
 - persistence is minimal
 - limited error handling
 - no authentication layer
-
-The architecture is designed to allow extension to a production-ready system.
