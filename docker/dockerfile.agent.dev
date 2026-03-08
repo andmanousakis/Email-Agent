@@ -1,0 +1,32 @@
+# File: docker/dockerfile.agent.dev
+
+FROM python:3.11-slim
+
+# Prevent .pyc files and enable unbuffered logs.
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    PYTHONPATH=/app
+
+# Set working directory.
+WORKDIR /app
+
+# Install system deps (optional but good practice).
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copy only agent requirements first (for caching).
+COPY requirements/requirements-agent.txt /app/requirements-agent.txt
+
+RUN pip install --no-cache-dir -r requirements-agent.txt
+
+# Copy project source.
+COPY src /app/src
+COPY data /app/data
+COPY configs /app/configs
+
+# Expose API port.
+EXPOSE 8000
+
+# Start FastAPI in reload mode.
+CMD ["uvicorn", "src.api.main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]

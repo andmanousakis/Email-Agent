@@ -1,0 +1,4 @@
+# File: configs/config-memory-store.yaml
+
+EMAIL_DATA_PATH: "data/data.json"
+MEMORY_DATA_PATH: "data/memory.json"

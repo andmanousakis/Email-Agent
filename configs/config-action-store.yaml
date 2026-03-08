@@ -1,0 +1,3 @@
+# File: configs/config-action-store.yaml
+
+EMAIL_DATA_PATH: "data/data.json"

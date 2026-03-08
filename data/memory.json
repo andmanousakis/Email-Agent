@@ -1,0 +1,263 @@
+{
+  "user_preferences": {
+    "reply_tone": "professional",
+    "reply_length": "concise",
+    "signature": "Best,\nAndreas",
+    "allow_calendar_suggestions": true,
+    "allow_task_suggestions": true
+  },
+  "contacts": [
+    {
+      "email": "billing@vendor.com",
+      "name": "Vendor Billing Team",
+      "role": "Accounts Receivable",
+      "preferred_tone": "formal"
+    }
+  ],
+  "org_facts": {
+    "default_meeting_duration_minutes": 30,
+    "incident_meeting_policy": "Create a calendar event when a meeting time is proposed."
+  },
+  "interaction_history": [
+    {
+      "thread_id": "t4_meeting_schedule",
+      "thread_subject": "Finalize API incident review meeting",
+      "approved_actions": [
+        {
+          "type": "create_calendar_event",
+          "label": "Schedule API incident review meeting",
+          "requires_approval": true,
+          "payload": {
+            "title": "API incident review meeting",
+            "description": "30-minute review meeting regarding the recent API incident.",
+            "start_time": "2025-08-07T11:00:00",
+            "end_time": "2025-08-07T11:30:00"
+          }
+        },
+        {
+          "type": "send_email",
+          "label": "Send confirmation email",
+          "requires_approval": true,
+          "payload": {
+            "recipient": "Manager",
+            "subject": "Re: Finalize API incident review meeting",
+            "body": "Dear manager,\n\nI have sent the calendar invitation for our API incident review meeting tomorrow at 11:00, including the engineering lead. \n\nAll the best, \nAndreas"
+          }
+        }
+      ]
+    },
+    {
+      "thread_id": "t2_invoice",
+      "thread_subject": "Overdue Invoice #4581",
+      "approved_actions": [
+        {
+          "type": "send_email",
+          "label": "Send reply to vendor regarding overdue invoice",
+          "requires_approval": true,
+          "payload": {
+            "recipient": "billing@vendor.com",
+            "subject": "Re: Overdue Invoice #4581",
+            "body": "Dear Billing Team, \n\nThank you for your patience. I am currently finalizing the status of payment for Invoice #4581 with our finance department and will provide you with a confirmation shortly. \n\nAll the best, \nAndreas"
+          }
+        },
+        {
+          "type": "create_task",
+          "label": "Follow up on payment status of Invoice #4581",
+          "requires_approval": false,
+          "payload": {
+            "title": "Check payment status of Invoice #4581",
+            "description": "Verify with the finance department if Invoice #4581 has been paid and inform the vendor.",
+            "due_date": "2023-10-27"
+          }
+        }
+      ]
+    },
+    {
+      "thread_id": "t2_invoice",
+      "thread_subject": "Overdue Invoice #4581",
+      "approved_actions": [
+        {
+          "type": "send_email",
+          "label": "Send reply regarding overdue invoice",
+          "requires_approval": true,
+          "payload": {
+            "recipient": "billing@vendor.com",
+            "subject": "Re: Overdue Invoice #4581",
+            "body": "Dear Billing Team, \n\nThank you for your patience. I am currently finalizing the status of payment for Invoice #4581 with our finance department and will provide you with a confirmation shortly. \n\nAll the best, \nAndreas"
+          }
+        },
+        {
+          "type": "create_task",
+          "label": "Follow up on invoice payment status",
+          "requires_approval": false,
+          "payload": {
+            "title": "Check payment status of Invoice #4581",
+            "description": "Verify with the finance department if Invoice #4581 has been paid and inform the vendor.",
+            "due_date": "2023-10-27"
+          }
+        }
+      ]
+    },
+    {
+      "thread_id": "t4_meeting_schedule",
+      "thread_subject": "Finalize API incident review meeting",
+      "approved_actions": [
+        {
+          "type": "send_email",
+          "label": "Send reply to manager",
+          "requires_approval": true,
+          "payload": {
+            "recipient": "manager",
+            "subject": "Re: Finalize API incident review meeting",
+            "body": "Hi, \n\nI have scheduled the 30-minute review meeting for tomorrow at 11:00 and included the engineering lead on the calendar invitation. \n\nSee you tomorrow, \nAndreas"
+          }
+        },
+        {
+          "type": "create_calendar_event",
+          "label": "Schedule production API incident review meeting",
+          "requires_approval": true,
+          "payload": {
+            "title": "Production API Incident Review",
+            "description": "Review meeting for the production API incident.",
+            "start_time": "2023-10-27T11:00:00",
+            "end_time": "2023-10-27T11:30:00"
+          }
+        }
+      ]
+    },
+    {
+      "thread_id": "t4_meeting_schedule",
+      "thread_subject": "Finalize API incident review meeting",
+      "approved_actions": [
+        {
+          "type": "send_email",
+          "label": "Send reply to finalize meeting",
+          "requires_approval": true,
+          "payload": {
+            "recipient": null,
+            "subject": "Re: Finalize API incident review meeting",
+            "body": "I have scheduled the 30-minute review meeting for tomorrow at 11:00 and included the engineering lead on the calendar invitation. See you tomorrow, Andreas\n\nBest,\nAndreas"
+          }
+        },
+        {
+          "type": "create_calendar_event",
+          "label": "Schedule API incident review meeting",
+          "requires_approval": true,
+          "payload": {
+            "title": "Production API Incident Review",
+            "description": "Review meeting for the production API incident.",
+            "start_time": "2023-10-27T11:00:00",
+            "end_time": "2023-10-27T11:30:00"
+          }
+        }
+      ]
+    },
+    {
+      "thread_id": "t4_meeting_schedule",
+      "thread_subject": "Finalize API incident review meeting",
+      "approved_actions": [
+        {
+          "type": "send_email",
+          "label": "Send reply to manager",
+          "requires_approval": true,
+          "payload": {
+            "recipient": "manager",
+            "subject": "Re: Finalize API incident review meeting",
+            "body": "I have scheduled the 30-minute review meeting for tomorrow at 11:00 and sent the calendar invite to you and the engineering lead. Best, Andreas"
+          }
+        },
+        {
+          "type": "create_calendar_event",
+          "label": "Schedule API incident review meeting",
+          "requires_approval": true,
+          "payload": {
+            "title": "Production API Incident Review",
+            "description": "Review meeting for the production API incident.",
+            "start_time": "2023-10-27T11:00:00",
+            "end_time": "2023-10-27T11:30:00"
+          }
+        }
+      ]
+    },
+    {
+      "thread_id": "t1_meeting",
+      "thread_subject": "Quick sync next week?",
+      "approved_actions": [
+        {
+          "type": "send_email",
+          "label": "Send reply to client",
+          "requires_approval": true,
+          "payload": {
+            "recipient": "client",
+            "subject": "Re: Quick sync next week?",
+            "body": "Hi, thank you for your patience. I have reviewed my schedule and can confirm that I am available for a 30-minute progress review next Wednesday, March 4th, at 10:00 AM. Please let me know if this works for you, and I will send over a calendar invitation. Best, Andreas\n\nBest,\nAndreas"
+          }
+        },
+        {
+          "type": "create_calendar_event",
+          "label": "Schedule progress review meeting",
+          "requires_approval": true,
+          "payload": {
+            "title": "Progress Review Meeting",
+            "description": "30-minute progress review meeting with client.",
+            "start_time": "2025-03-04T10:00:00",
+            "end_time": "2025-03-04T10:30:00"
+          }
+        }
+      ]
+    },
+    {
+      "thread_id": "t4_meeting_schedule",
+      "thread_subject": "Finalize API incident review meeting",
+      "approved_actions": [
+        {
+          "type": "send_email",
+          "label": "Send reply to finalize meeting",
+          "requires_approval": true,
+          "payload": {
+            "recipient": "manager@company.com",
+            "subject": "Re: Finalize API incident review meeting",
+            "body": "Hi, I have scheduled the 30-minute incident review meeting for tomorrow at 11:00 AM and have included the engineering lead on the calendar invitation. Best, Andreas"
+          }
+        },
+        {
+          "type": "create_calendar_event",
+          "label": "Schedule incident review meeting",
+          "requires_approval": true,
+          "payload": {
+            "title": "Production API Incident Review",
+            "description": "30-minute review meeting for the production API incident.",
+            "start_time": "2023-10-27T11:00:00Z",
+            "end_time": "2023-10-27T11:30:00Z"
+          }
+        }
+      ]
+    },
+    {
+      "thread_id": "t3_urgent",
+      "thread_subject": "URGENT: API errors in production",
+      "approved_actions": [
+        {
+          "type": "send_email",
+          "label": "Send reply to the incident report",
+          "requires_approval": false,
+          "payload": {
+            "recipient": null,
+            "subject": "RE: URGENT: API errors in production",
+            "body": "I have received the alert regarding the 502 errors affecting Eurobank-Loyalty clients. I am initiating an immediate investigation into the API logs to identify the root cause and will provide an update as soon as possible. Best, Andreas"
+          }
+        },
+        {
+          "type": "create_task",
+          "label": "Investigate production API 502 errors",
+          "requires_approval": true,
+          "payload": {
+            "title": "Investigate production API 502 errors for Eurobank-Loyalty",
+            "description": "Analyze API logs to identify the root cause of the 37% error rate impacting Eurobank-Loyalty clients.",
+            "due_date": "2023-10-27"
+          }
+        }
+      ]
+    }
+  ]
+}

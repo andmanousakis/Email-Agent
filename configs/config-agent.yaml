@@ -1,0 +1,6 @@
+# File: configs/config-agent.yaml
+
+API_CLIENT:
+  BASE_URL: "http://agent:8000"
+  HEALTH_ENDPOINT_TIMEOUT: 10
+  RUN_AGENT_TIMEOUT: 150

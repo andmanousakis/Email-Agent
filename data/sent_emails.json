@@ -1,0 +1,92 @@
+[
+  {
+    "executed_at": "2026-03-08T21:03:13.230986+00:00",
+    "thread_id": "t4_meeting_schedule",
+    "thread_subject": "Finalize API incident review meeting",
+    "action_type": "send_email",
+    "action_label": "Send confirmation email",
+    "recipient": "Manager",
+    "subject": "Re: Finalize API incident review meeting",
+    "body": "Dear manager,\n\nI have sent the calendar invitation for our API incident review meeting tomorrow at 11:00, including the engineering lead. \n\nAll the best, \nAndreas"
+  },
+  {
+    "executed_at": "2026-03-08T21:10:49.902141+00:00",
+    "thread_id": "t2_invoice",
+    "thread_subject": "Overdue Invoice #4581",
+    "action_type": "send_email",
+    "action_label": "Send reply to vendor regarding overdue invoice",
+    "recipient": "billing@vendor.com",
+    "subject": "Re: Overdue Invoice #4581",
+    "body": "Dear Billing Team, \n\nThank you for your patience. I am currently finalizing the status of payment for Invoice #4581 with our finance department and will provide you with a confirmation shortly. \n\nAll the best, \nAndreas"
+  },
+  {
+    "executed_at": "2026-03-08T21:14:24.707096+00:00",
+    "thread_id": "t2_invoice",
+    "thread_subject": "Overdue Invoice #4581",
+    "action_type": "send_email",
+    "action_label": "Send reply regarding overdue invoice",
+    "recipient": "billing@vendor.com",
+    "subject": "Re: Overdue Invoice #4581",
+    "body": "Dear Billing Team, \n\nThank you for your patience. I am currently finalizing the status of payment for Invoice #4581 with our finance department and will provide you with a confirmation shortly. \n\nAll the best, \nAndreas"
+  },
+  {
+    "executed_at": "2026-03-08T21:28:19.259424+00:00",
+    "thread_id": "t4_meeting_schedule",
+    "thread_subject": "Finalize API incident review meeting",
+    "action_type": "send_email",
+    "action_label": "Send reply to manager",
+    "recipient": "manager",
+    "subject": "Re: Finalize API incident review meeting",
+    "body": "Hi, \n\nI have scheduled the 30-minute review meeting for tomorrow at 11:00 and included the engineering lead on the calendar invitation. \n\nSee you tomorrow, \nAndreas"
+  },
+  {
+    "executed_at": "2026-03-08T21:55:48.009432+00:00",
+    "thread_id": "t4_meeting_schedule",
+    "thread_subject": "Finalize API incident review meeting",
+    "action_type": "send_email",
+    "action_label": "Send reply to finalize meeting",
+    "recipient": null,
+    "subject": "Re: Finalize API incident review meeting",
+    "body": "I have scheduled the 30-minute review meeting for tomorrow at 11:00 and included the engineering lead on the calendar invitation. See you tomorrow, Andreas\n\nBest,\nAndreas"
+  },
+  {
+    "executed_at": "2026-03-08T22:00:56.084310+00:00",
+    "thread_id": "t4_meeting_schedule",
+    "thread_subject": "Finalize API incident review meeting",
+    "action_type": "send_email",
+    "action_label": "Send reply to manager",
+    "recipient": "manager",
+    "subject": "Re: Finalize API incident review meeting",
+    "body": "I have scheduled the 30-minute review meeting for tomorrow at 11:00 and sent the calendar invite to you and the engineering lead. Best, Andreas"
+  },
+  {
+    "executed_at": "2026-03-08T22:06:46.686690+00:00",
+    "thread_id": "t1_meeting",
+    "thread_subject": "Quick sync next week?",
+    "action_type": "send_email",
+    "action_label": "Send reply to client",
+    "recipient": "client",
+    "subject": "Re: Quick sync next week?",
+    "body": "Hi, thank you for your patience. I have reviewed my schedule and can confirm that I am available for a 30-minute progress review next Wednesday, March 4th, at 10:00 AM. Please let me know if this works for you, and I will send over a calendar invitation. Best, Andreas\n\nBest,\nAndreas"
+  },
+  {
+    "executed_at": "2026-03-08T22:07:21.415252+00:00",
+    "thread_id": "t4_meeting_schedule",
+    "thread_subject": "Finalize API incident review meeting",
+    "action_type": "send_email",
+    "action_label": "Send reply to finalize meeting",
+    "recipient": "manager@company.com",
+    "subject": "Re: Finalize API incident review meeting",
+    "body": "Hi, I have scheduled the 30-minute incident review meeting for tomorrow at 11:00 AM and have included the engineering lead on the calendar invitation. Best, Andreas"
+  },
+  {
+    "executed_at": "2026-03-08T22:08:17.837221+00:00",
+    "thread_id": "t3_urgent",
+    "thread_subject": "URGENT: API errors in production",
+    "action_type": "send_email",
+    "action_label": "Send reply to the incident report",
+    "recipient": null,
+    "subject": "RE: URGENT: API errors in production",
+    "body": "I have received the alert regarding the 502 errors affecting Eurobank-Loyalty clients. I am initiating an immediate investigation into the API logs to identify the root cause and will provide an update as soon as possible. Best, Andreas"
+  }
+]

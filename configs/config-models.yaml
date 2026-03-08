@@ -1,0 +1,13 @@
+# File: configs/config-models.yaml
+
+GENERATION_MODEL:
+  NAME: gemini-3.1-flash-lite-preview # gemini-3-flash-preview
+  TEMPERATURE: 0.5
+  MAX_TOKENS: 4096
+  TOP_P: 0.9
+
+EMBEDDINGMODEL:
+  NAME: gemini-embedding-001 
+  TEMPERATURE: 0.5
+  MAX_TOKENS: 4096
+  TOP_P: 0.9

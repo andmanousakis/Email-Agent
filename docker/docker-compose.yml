@@ -1,0 +1,33 @@
+# File: docker/docker-compose.yml
+
+services:
+
+  agent:
+    container_name: email-agent
+    image: email-agent
+    build:
+      context: ..
+      dockerfile: docker/dockerfile.agent.dev
+    ports:
+      - "8000:8000"
+    env_file:
+      - ../.env
+    volumes:
+      - ..:/app
+
+  ui:
+    container_name: email-agent-ui
+    image: email-agent-ui
+    build:
+      context: ..
+      dockerfile: docker/dockerfile.ui.dev
+    ports:
+      - "8501:8501"
+    env_file:
+      - ../.env
+    environment:
+      AGENT_BASE_URL: http://agent:8000
+    volumes:
+      - ..:/app
+    depends_on:
+      - agent

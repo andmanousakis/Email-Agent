@@ -1,0 +1,88 @@
+{
+  "threads": [
+    {
+      "thread_id": "t1_meeting",
+      "subject": "Quick sync next week?",
+      "messages": [
+        {
+          "from": "client@example.com",
+          "timestamp": "2026-03-01T09:00:00Z",
+          "body": "Hi Andreas, can we schedule a 30-min call next week to review progress? Tuesday or Wednesday works for us."
+        },
+        {
+          "from": "andreas@company.com",
+          "timestamp": "2026-03-01T10:12:00Z",
+          "body": "Hi, thanks for reaching out. I may have limited availability next week. Let me confirm shortly."
+        },
+        {
+          "from": "client@example.com",
+          "timestamp": "2026-03-02T08:45:00Z",
+          "body": "Just following up — we need to lock this in today if possible."
+        }
+      ]
+    },
+    {
+      "thread_id": "t2_invoice",
+      "subject": "Overdue Invoice #4581",
+      "messages": [
+        {
+          "from": "billing@vendor.com",
+          "timestamp": "2026-02-25T11:15:00Z",
+          "body": "Hello, Invoice #4581 is now 10 days overdue. Please confirm payment status."
+        },
+        {
+          "from": "andreas@company.com",
+          "timestamp": "2026-02-25T13:20:00Z",
+          "body": "Thanks for the reminder. I will check internally with finance."
+        },
+        {
+          "from": "billing@vendor.com",
+          "timestamp": "2026-02-28T09:05:00Z",
+          "body": "Following up again. We have not received confirmation yet."
+        }
+      ]
+    },
+    {
+      "thread_id": "t3_urgent",
+      "subject": "URGENT: API errors in production",
+      "messages": [
+        {
+          "from": "ops@company.com",
+          "timestamp": "2026-03-01T06:10:00Z",
+          "body": "Production API returning 502 errors since 05:45 UTC. Please investigate immediately."
+        },
+        {
+          "from": "cto@company.com",
+          "timestamp": "2026-03-01T06:22:00Z",
+          "body": "Impacting Eurobank-Loyalty clients. This is high priority."
+        },
+        {
+          "from": "ops@company.com",
+          "timestamp": "2026-03-01T06:40:00Z",
+          "body": "Error rate increasing. Now at 37% failed requests."
+        }
+      ]
+    },
+    {
+      "thread_id": "t4_meeting_schedule",
+      "subject": "Finalize API incident review meeting",
+      "messages": [
+        {
+          "from": "manager@company.com",
+          "timestamp": "2026-03-05T09:00:00Z",
+          "body": "We need a 30-minute review meeting for the production API incident. Are you available tomorrow at 11:00?"
+        },
+        {
+          "from": "andreas@company.com",
+          "timestamp": "2026-03-05T09:15:00Z",
+          "body": "Yes, I am available tomorrow at 11:00."
+        },
+        {
+          "from": "manager@company.com",
+          "timestamp": "2026-03-05T09:20:00Z",
+          "body": "Great. Please send the calendar invite for tomorrow at 11:00 and include the engineering lead."
+        }
+      ]
+    }
+  ]
+}

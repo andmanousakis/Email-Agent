@@ -1,0 +1,9 @@
+# File: requirements/requirements-ui.txt
+
+google-genai==1.66.0
+httpx==0.28.1
+langgraph==1.0.10
+pandas==2.3.3
+pydantic==2.12.5
+pyyaml==6.0.3
+streamlit==1.55.0

@@ -1,0 +1,31 @@
+# File: docker/dockerfile.demo.dev
+
+FROM python:3.11-slim
+
+# Prevent .pyc files and enable real-time logs.
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    PYTHONPATH=/app
+
+# Set working directory.
+WORKDIR /app
+
+# Install minimal system dependencies.
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copy requirements first (better Docker layer caching).
+COPY requirements/requirements-agent.txt /app/requirements-agent.txt
+
+# Install Python dependencies.
+RUN pip install --no-cache-dir -r requirements-agent.txt
+
+# Copy project files.
+COPY src /app/src
+COPY data /app/data
+COPY configs /app/configs
+COPY utils /app/utils
+
+# Run the demo agent.
+CMD ["python", "-m", "src.core.agent.demo"]

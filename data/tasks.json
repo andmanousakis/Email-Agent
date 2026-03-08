@@ -1,0 +1,32 @@
+[
+  {
+    "executed_at": "2026-03-08T21:10:49.902856+00:00",
+    "thread_id": "t2_invoice",
+    "thread_subject": "Overdue Invoice #4581",
+    "action_type": "create_task",
+    "action_label": "Follow up on payment status of Invoice #4581",
+    "title": "Check payment status of Invoice #4581",
+    "description": "Verify with the finance department if Invoice #4581 has been paid and inform the vendor.",
+    "due_date": "2023-10-27"
+  },
+  {
+    "executed_at": "2026-03-08T21:14:24.708790+00:00",
+    "thread_id": "t2_invoice",
+    "thread_subject": "Overdue Invoice #4581",
+    "action_type": "create_task",
+    "action_label": "Follow up on invoice payment status",
+    "title": "Check payment status of Invoice #4581",
+    "description": "Verify with the finance department if Invoice #4581 has been paid and inform the vendor.",
+    "due_date": "2023-10-27"
+  },
+  {
+    "executed_at": "2026-03-08T22:08:17.838584+00:00",
+    "thread_id": "t3_urgent",
+    "thread_subject": "URGENT: API errors in production",
+    "action_type": "create_task",
+    "action_label": "Investigate production API 502 errors",
+    "title": "Investigate production API 502 errors for Eurobank-Loyalty",
+    "description": "Analyze API logs to identify the root cause of the 37% error rate impacting Eurobank-Loyalty clients.",
+    "due_date": "2023-10-27"
+  }
+]

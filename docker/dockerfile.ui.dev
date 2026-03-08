@@ -1,0 +1,26 @@
+# File: docker/dockerfile.ui.dev
+
+FROM python:3.11-slim
+
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    PYTHONPATH=/app
+
+WORKDIR /app
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY requirements/requirements-ui.txt /app/requirements-ui.txt
+
+RUN pip install --no-cache-dir -r requirements-ui.txt
+
+COPY src /app/src
+COPY data /app/data
+COPY configs /app/configs
+COPY utils /app/utils
+
+EXPOSE 8501
+
+CMD ["streamlit", "run", "src/core/ui/ui.py", "--server.address=0.0.0.0", "--server.port=8501"]
