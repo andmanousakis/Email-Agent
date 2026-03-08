@@ -17,7 +17,7 @@ git clone --branch main --single-branch git@github.com:andmanousakis/Email-Agent
 
 2. Create .env from .env.example and paste a Gemini API key:
 ```bash
-2. Create .env from .env.example:
+cp .env.example .env
 ```
 
 3. Build and run:
