@@ -12,7 +12,7 @@ For DEMO purposes, a UI was built.
 
 1. Clone the branch:
 ```bash
-git clone --branch main --single-branch git@github.com:andmanousakis/Email-Agent.git Email-Agent
+git clone --branch main --single-branch git@github.com:andmanousakis/Email-Agent.git
 ```
 
 2. Create .env from .env.example and paste a Gemini API key:
